@@ -76,14 +76,18 @@ const RentPropertiesForm = () => {
                   Jenny Wilson
                 </div>
               </div>
+              {/* 
+                    https://user-images.githubusercontent.com/20041050/206600605-d7f05434-3958-4163-9b4f-31bffbeff9d1.png
+                    */}
+
               <div className="flex flex-row items-start justify-start gap-[8.71px]">
-                <a
+                <button
+                  type="button"
                   className="[text-decoration:none] rounded-[1.45px] bg-primary-50 flex flex-row p-[2.902620315551758px] items-start justify-start"
-                  href="https://user-images.githubusercontent.com/20041050/206600605-d7f05434-3958-4163-9b4f-31bffbeff9d1.png"
                 >
                   <Link
                     className="cursor-pointer [text-decoration:none] relative w-[14.51px] h-[14.51px]"
-                    href="/"
+                    href="https://user-images.githubusercontent.com/20041050/206600605-d7f05434-3958-4163-9b4f-31bffbeff9d1.png"
                   >
                     <img
                       className="absolute h-full w-full top-[0%] right-[0%] bottom-[0%] left-[0%] max-w-full overflow-hidden max-h-full"
@@ -116,7 +120,7 @@ const RentPropertiesForm = () => {
                       src="/vector5.svg"
                     />
                   </Link>
-                </a>
+                </button>
                 <button className="cursor-pointer [border:none] p-[2.902620315551758px] bg-primary-50 rounded-[1.45px] flex flex-row items-start justify-start">
                   <img
                     className="relative w-[14.51px] h-[14.51px]"
