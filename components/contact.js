@@ -64,7 +64,6 @@ const Contact = () => {
               variant="outlined"
               multiline
               rows={5}
-              maxRows={15}
               label="Comments or questions"
               placeholder="Textarea placeholder"
               margin="none"

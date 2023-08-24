@@ -35,6 +35,32 @@ const Hero = () => {
     router.push("/");
   }, [router]);
 
+  const handleClick = (e) => {
+    console.log(e.key);
+  };
+  const cityList = [
+    { label: "Lagos", key: "Lagos" },
+    { label: "Kwara", key: "Kwara" },
+  ];
+
+  const priceRangeList = [
+    { label: "100", key: "100" },
+    { label: "200", key: "200" },
+    { label: "300", key: "300" },
+    { label: "400", key: "400" },
+  ];
+
+  const propertyTypeList = [
+    { label: "Studio apartments", key: "Studio apartments" },
+    { label: "One-bedroom apartments", key: "One-bedroom apartments" },
+    { label: "Two-bedroom apartments", key: "Two-bedroom apartments" },
+    { label: "Three-bedroom apartments", key: "Three-bedroom apartments" },
+    {
+      label: "Four or more bedroom apartments/houses",
+      key: "Four or more bedroom apartments/houses",
+    },
+  ];
+
   return (
     <div className="self-stretch flex flex-col py-[120px] px-[30px] items-center justify-start bg-[url('/hero-section@3x.png')] bg-cover bg-no-repeat bg-[top] text-center text-33xl text-gray-white font-body-regular-400">
       <div className="self-stretch flex flex-col items-center justify-center gap-[62px] max-w-[95%px]">
@@ -70,9 +96,7 @@ const Hero = () => {
                 <div className="relative text-base leading-[24px] capitalize font-semibold font-body-regular-600 text-primary-700 text-center">
                   Locations
                 </div>
-                <Dropdown
-                  overlay={
-                    <Menu>
+                {/* <Menu>
                       {[{ value: "Lagos" }, { value: "Kwara" }].map(
                         (option, index) => (
                           <Menu.Item key={index}>
@@ -82,8 +106,13 @@ const Hero = () => {
                           </Menu.Item>
                         )
                       )}
-                    </Menu>
-                  }
+                    </Menu> */}
+                <Dropdown
+                  className="self-stretch text-sm"
+                  menu={{
+                    onClick: handleClick,
+                    items: cityList,
+                  }}
                   placement="bottomLeft"
                   trigger={["hover"]}
                 >
@@ -98,24 +127,11 @@ const Hero = () => {
                   Property Type
                 </div>
                 <Dropdown
-                  className="self-stretch"
-                  overlay={
-                    <Menu>
-                      {[
-                        { value: "Studio apartments" },
-                        { value: "One-bedroom apartments" },
-                        { value: "Two-bedroom apartments" },
-                        { value: "Three-bedroom apartments" },
-                        { value: "Four or more bedroom apartments/houses" },
-                      ].map((option, index) => (
-                        <Menu.Item key={index}>
-                          <a onClick={(e) => e.preventDefault()}>
-                            {option.value || ""}
-                          </a>
-                        </Menu.Item>
-                      ))}
-                    </Menu>
-                  }
+                  className="self-stretch text-sm"
+                  menu={{
+                    onClick: handleClick,
+                    items: propertyTypeList,
+                  }}
                   placement="bottomLeft"
                   trigger={["hover"]}
                 >
@@ -130,23 +146,11 @@ const Hero = () => {
                   Rent Range
                 </div>
                 <Dropdown
-                  className="self-stretch"
-                  overlay={
-                    <Menu>
-                      {[
-                        { value: "100" },
-                        { value: "200" },
-                        { value: "300" },
-                        { value: "400" },
-                      ].map((option, index) => (
-                        <Menu.Item key={index}>
-                          <a onClick={(e) => e.preventDefault()}>
-                            {option.value || ""}
-                          </a>
-                        </Menu.Item>
-                      ))}
-                    </Menu>
-                  }
+                  className="self-stretch text-sm"
+                  menu={{
+                    onClick: handleClick,
+                    items: priceRangeList,
+                  }}
                   placement="bottomLeft"
                   trigger={["hover"]}
                 >
