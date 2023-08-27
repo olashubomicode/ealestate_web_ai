@@ -131,34 +131,54 @@ const Footer = () => {
         <div className="w-[173px] flex flex-col items-start justify-start gap-[32px]">
           <div className="relative leading-[32px] font-semibold">Features</div>
           <div className="self-stretch h-[184px] flex flex-col items-start justify-start gap-[16px] text-base text-gray-500">
-            <div className="leading-[24px]">Home</div>
-            <div className="leading-[24px]">Become a Host</div>
-            <div className="leading-[24px]">Pricing</div>
-            <div className="leading-[24px]">Blog</div>
-            <div className="leading-[24px]">Contact</div>
+            <a href="/properties" className="text-gray-500 leading-[24px]">
+              Home
+            </a>
+            <a href="/properties" className="text-gray-500 leading-[24px]">
+              Become a Host
+            </a>
+            <a href="/properties" className="text-gray-500 leading-[24px]">
+              Pricing
+            </a>
+            <a href="/properties" className="text-gray-500 leading-[24px]">
+              Blog
+            </a>
+            <a href="/properties" className="text-gray-500 leading-[24px]">
+              Contact
+            </a>
           </div>
         </div>
         <div className="w-[173px] ] flex flex-col items-start justify-start gap-[32px]">
           <div className="relative leading-[32px] font-semibold">Company</div>
           <div className="self-stretch h-[184px] flex flex-col items-start justify-start gap-[16px] text-base text-gray-500">
-            <div className="leading-[24px]">About Us</div>
-            <div className="leading-[24px]">Press</div>
-            <div className="leading-[24px]">Contact</div>
-            <div className="leading-[24px]">Careers</div>
-            <div className="leading-[24px]">Blog</div>
+            <a href="/properties" className="text-gray-500 leading-[24px]">
+              About Us
+            </a>
+            <a href="/properties" className="text-gray-500 leading-[24px]">
+              Press
+            </a>
+            <a href="/properties" className="text-gray-500 leading-[24px]">
+              Contact
+            </a>
+            <a href="/properties" className="text-gray-500 leading-[24px]">
+              Careers
+            </a>
+            <a href="/properties" className="text-gray-500 leading-[24px]">
+              Blog
+            </a>
           </div>
         </div>
         {/* h-[168px]  */}
         <div className="w-[203px]  flex flex-col items-start justify-start gap-[32px]">
           <div className="leading-[32px] font-semibold">Team and policies</div>
           <div className=" h-[104px] flex flex-col items-start justify-start gap-[16px] text-base text-gray-500">
-            <a href="" className="leading-[24px]">
+            <a href="/properties" className="text-gray-500 leading-[24px]">
               Terms of servies
             </a>
-            <a href="" className="leading-[24px]">
+            <a href="/properties" className="text-gray-500 leading-[24px]">
               Privacy Policy
             </a>
-            <a href="" className="leading-[24px]">
+            <a href="/properties" className="text-gray-500 leading-[24px]">
               Security
             </a>
           </div>
