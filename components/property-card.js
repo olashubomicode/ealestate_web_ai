@@ -1,7 +1,7 @@
 import { useMemo } from "react";
 
 const PropertyCard = ({
-  imageDimensions,
+  /* imageDimensions,
   imageDimensionIds,
   imageDimensionValues,
   imageDimensionIdsAndValue,
@@ -21,16 +21,45 @@ const PropertyCard = ({
   propDisplay2,
   propDisplay3,
   propDisplay4,
-  propDisplay5,
+  propDisplay5, */
+
+  /* 
+  imageDimensions="/unsplashrlwe8f8anoc1@2x.png"
+          imageDimensionIds="/car1.svg"
+          imageDimensionValues="/bathtub1.svg"
+          imageDimensionIdsAndValue="/arrowsout.svg"
+          imageDimensionIdsAndValue2="/ellipse-1@2x.png"
+          imageDimensionIdsAndValue3="/sharenetwork1.svg"
+          imageDimensionIdsAndValue4="/heart1.svg"
+          imageDimensionIdsAndValue5="/plus1.svg"
+          propWidth="350px"
+          propFlex="unset"
+          propMinWidth="unset"
+          propMaxWidth="unset"
+          propBoxSizing="border-box"
+          propDisplay="inline-block"
+          propBoxSizing1="border-box"
+          propDisplay1="inline-block"
+          propBoxSizing2="border-box"
+          propDisplay2="inline-block"
+          propDisplay3="inline-block"
+          propDisplay4="inline-block"
+          propDisplay5="inline-block"
+  */
+  key,
+  imgUrl,
+  name,
+  price,
 }) => {
-  const card1Style = useMemo(() => {
+  /* const card1Style = useMemo(() => {
     return {
-      width: propWidth,
-      flex: propFlex,
-      minWidth: propMinWidth,
-      maxWidth: propMaxWidth,
+      width: "350px",
+      flex: "unset",
+      minWidth: "unset",
+      maxWidth: "unset",
     };
-  }, [propWidth, propFlex, propMinWidth, propMaxWidth]);
+  }, [propWidth, propFlex, propMinWidth, propMaxWidth]); */
+  /* 
 
   const propertyNameStyle = useMemo(() => {
     return {
@@ -60,9 +89,9 @@ const PropertyCard = ({
     return {
       boxSizing: propBoxSizing2,
     };
-  }, [propBoxSizing2]);
+  }, [propBoxSizing2]); */
 
-  const div1Style = useMemo(() => {
+  /* const div1Style = useMemo(() => {
     return {
       display: propDisplay2,
     };
@@ -84,53 +113,65 @@ const PropertyCard = ({
     return {
       display: propDisplay5,
     };
-  }, [propDisplay5]);
+  }, [propDisplay5]); */
 
+  console.warn("img", imgUrl);
   return (
     <div
       className="rounded-3xs bg-gray-white box-border w-[350px] h-[466.99px] flex flex-col py-[15px] px-[13px] items-start justify-start gap-[23px] text-left text-[14.51px] text-gray-700 font-body-regular-600 border-[1px] border-solid border-whitesmoke-100 hover:bg-gainsboro hover:cursor-pointer sm:w-[100%!important] sm:mb-5"
-      style={card1Style}
+      // style={card1Style}
+      style={{
+        width: "350px",
+        flex: "unset",
+        minWidth: "unset",
+        maxWidth: "unset",
+      }}
     >
       <img
         className="self-stretch relative rounded-3xs max-w-full overflow-hidden h-[200px] shrink-0 object-cover"
         alt=""
-        src={imageDimensions}
+        src={imgUrl}
       />
       <div
         className="self-stretch flex flex-row p-2.5 items-start justify-start"
-        style={propertyNameStyle}
+        // style={propertyNameStyle}
+        style={{ boxSizing: "border-box" }}
       >
         <div
           className="flex-1 relative leading-[20.32px] font-medium"
-          style={aLLIUMPLACEORLANDOStyle}
+          // style={aLLIUMPLACEORLANDOStyle}
+          style={{ display: "inline-block" }}
         >
           92 ALLIUM PLACE, ORLANDO FL 32827
         </div>
       </div>
       <div
         className="self-stretch flex flex-row p-2.5 items-start justify-start text-[13.55px] text-primary-500"
-        style={priceStyle}
+        // style={priceStyle}
+        style={{ boxSizing: "border-box" }}
       >
         <div
           className="relative leading-[18.98px] font-semibold"
-          style={divStyle}
+          // style={divStyle}
+          style={{ display: "inline-block" }}
         >
-          $ 590,693
+          {price}
         </div>
       </div>
       <div
         className="self-stretch flex flex-row py-0 px-2.5 items-start justify-start gap-[17px] text-[10.84px] text-gray-500"
-        style={moreDetailsStyle}
+        // style={moreDetailsStyle}
+        style={{ boxSizing: "border-box" }}
       >
         <div className="flex flex-row items-center justify-start gap-[4.35px]">
           <img
             className="relative w-[17.42px] h-[17.42px]"
             alt=""
-            src={imageDimensionIds}
+            src="/car1.svg"
           />
           <div
             className="relative leading-[16.27px] font-medium"
-            style={div1Style}
+            style={{ display: "inline-block" }}
           >
             4
           </div>
@@ -139,11 +180,12 @@ const PropertyCard = ({
           <img
             className="relative w-[17.42px] h-[17.42px]"
             alt=""
-            src={imageDimensionValues}
+            src="/bathtub1.svg"
           />
           <div
             className="relative leading-[16.27px] font-medium"
-            style={div2Style}
+            // style={div2Style}
+            style={{ display: "inline-block" }}
           >
             4
           </div>
@@ -152,11 +194,11 @@ const PropertyCard = ({
           <img
             className="relative w-[17.42px] h-[17.42px]"
             alt=""
-            src={imageDimensionIdsAndValue}
+            src="/arrowsout.svg"
           />
           <div
             className="relative leading-[16.27px] font-medium"
-            style={ftStyle}
+            style={{ display: "inline-block" }}
           >
             2,096.00 ft
           </div>
@@ -167,13 +209,13 @@ const PropertyCard = ({
           <img
             className="relative rounded-[50%] w-[27.57px] h-[27.57px] object-cover"
             alt=""
-            src={imageDimensionIdsAndValue2}
+            src="/ellipse-1@2x.png"
           />
           <div
             className="relative leading-[17.42px] font-medium"
-            style={jennyWilsonStyle}
+            style={{ display: "inline-block" }}
           >
-            Jenny Wilson
+            {name}
           </div>
         </div>
         <div className="flex flex-row items-start justify-start gap-[8.71px]">
@@ -184,21 +226,21 @@ const PropertyCard = ({
             <img
               className="relative w-[14.51px] h-[14.51px]"
               alt=""
-              src={imageDimensionIdsAndValue3}
+              src="/sharenetwork1.svg"
             />
           </a>
           <button className="cursor-pointer [border:none] p-[2.902620315551758px] bg-primary-50 rounded-[1.45px] flex flex-row items-start justify-start">
             <img
               className="relative w-[14.51px] h-[14.51px]"
               alt=""
-              src={imageDimensionIdsAndValue4}
+              src="/heart1.svg"
             />
           </button>
           <button className="cursor-pointer [border:none] p-[2.902620315551758px] bg-primary-50 rounded-[1.45px] flex flex-row items-start justify-start">
             <img
               className="relative w-[14.51px] h-[14.51px]"
               alt=""
-              src={imageDimensionIdsAndValue5}
+              src="/plus1.svg"
             />
           </button>
         </div>
