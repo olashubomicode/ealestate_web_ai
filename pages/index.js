@@ -24,15 +24,15 @@ const LandingPage = () => {
         <RentPropertiesContainer />
         <Contact />
         <Footer
-          imageDimensions="/houseline2.svg"
-          dimensionText="/social-media-logo5.svg"
-          dimensionText2="/social-media-logo6.svg"
-          dimensionCode="/social-media-logo7.svg"
-          dimensionCodeImageUrl="/social-media-logo8.svg"
-          imageDimensionsText="/social-media-logo9.svg"
-          propOverflow="unset"
-          propTextDecoration="unset"
-          propTextDecoration1="unset"
+        // imageDimensions="/houseline2.svg"
+        // dimensionText="/social-media-logo5.svg"
+        // dimensionText2="/social-media-logo6.svg"
+        // dimensionCode="/social-media-logo7.svg"
+        // dimensionCodeImageUrl="/social-media-logo8.svg"
+        // imageDimensionsText="/social-media-logo9.svg"
+        // propOverflow="unset"
+        // propTextDecoration="unset"
+        // propTextDecoration1="unset"
         />
       </main>
     </>

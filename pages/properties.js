@@ -109,14 +109,14 @@ const PropertiesGridView = () => {
         </div>
       </div>
       <Footer
-        imageDimensions="/houseline1.svg"
+      /* imageDimensions="/houseline1.svg"
         contactInfo="tel:+17122505005"
         emailAddress="mailto:code2adebayo@gmail.com"
         dimensionText="/social-media-logo.svg"
         dimensionText2="/social-media-logo1.svg"
         dimensionCode="/social-media-logo2.svg"
         dimensionCodeImageUrl="/social-media-logo3.svg"
-        imageDimensionsText="/social-media-logo4.svg"
+        imageDimensionsText="/social-media-logo4.svg" */
       />
     </div>
   );
