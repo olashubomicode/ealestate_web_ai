@@ -80,12 +80,16 @@ const Hero = () => {
               className="cursor-pointer [border:none] py-3 px-6 bg-primary-500 rounded overflow-hidden flex flex-row items-start justify-start hover:bg-steelblue sm:hover:bg-gray-white"
               autoFocus
             >
-              <div className="relative text-base leading-[24px] font-medium font-body-regular-600 text-gray-white text-center hover:text-gray-white">
+              {/* hover:text-gray-white */}
+              <div className="relative text-base leading-[24px] font-medium font-body-regular-600 text-gray-white text-center ">
                 Rent
               </div>
             </button>
-            <button className="cursor-pointer [border:none] py-3 px-6 bg-gray-white rounded overflow-hidden flex flex-row items-start justify-start hover:bg-primary-500">
-              <div className="relative text-base leading-[24px] font-medium font-body-regular-600 text-primary-400 text-center hover:text-gray-white">
+            <button
+              className="cursor-pointer [border:none] py-3 px-6 text-primary-400 bg-gray-white rounded overflow-hidden flex flex-row items-start 
+            justify-start hover:bg-primary-500 hover:text-white "
+            >
+              <div className="relative text-base leading-[24px] font-medium font-body-regular-600  text-center ">
                 Sale
               </div>
             </button>

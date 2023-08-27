@@ -1,10 +1,9 @@
 import React from "react";
 import Head from "next/head";
 
+import "./global.css";
 import { ThemeProvider, createTheme } from "@mui/material";
 import CssBaseline from "@mui/material/CssBaseline";
-
-import "./global.css";
 
 export default function MyApp(props) {
   const { Component, pageProps } = props;
