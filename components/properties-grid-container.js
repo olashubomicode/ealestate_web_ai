@@ -1,10 +1,15 @@
 import PropertyCard from "./property-card";
 
-const PropertiesGridContainer = () => {
+const PropertiesGridContainer = ({ allProperties }) => {
+  console.warn("allProperies", allProperties);
   return (
     <div className="self-stretch flex flex-row flex-wrap items-start justify-center text-left text-[14.51px] text-gray-700 font-body-regular-600">
       <div className="flex-1 flex flex-row flex-wrap items-start justify-center gap-[8px]">
-        <PropertyCard
+        {allProperties?.length &&
+          allProperties.map(({ id, image, name, price }) => (
+            <PropertyCard key={id} imgUrl={image} name={name} price={price} />
+          ))}
+        {/* <PropertyCard
           imageDimensions="/unsplashrlwe8f8anoc@2x.png"
           imageDimensionIds="/car.svg"
           imageDimensionValues="/bathtub.svg"
@@ -13,8 +18,8 @@ const PropertiesGridContainer = () => {
           imageDimensionIdsAndValue3="/sharenetwork.svg"
           imageDimensionIdsAndValue4="/heart.svg"
           imageDimensionIdsAndValue5="/plus.svg"
-        />
-        <PropertyCard
+        /> */}
+        {/* <PropertyCard
           imageDimensions="/unsplashrlwe8f8anoc1@2x.png"
           imageDimensionIds="/car1.svg"
           imageDimensionValues="/bathtub1.svg"
@@ -174,7 +179,7 @@ const PropertiesGridContainer = () => {
           propDisplay3="inline-block"
           propDisplay4="inline-block"
           propDisplay5="inline-block"
-        />
+        /> */}
       </div>
     </div>
   );

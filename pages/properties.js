@@ -1,15 +1,32 @@
+import { useEffect, useState } from "react";
 import "antd/dist/antd.min.css";
 import { Menu, Dropdown, Pagination } from "antd";
 import { DownOutlined } from "@ant-design/icons";
+import { createClient } from "@supabase/supabase-js";
 import Header from "../components/header";
 import PropertiesGridContainer from "../components/properties-grid-container";
 import Footer from "../components/footer";
 
 const PropertiesGridView = () => {
+  const [properties, setProperties] = useState([]);
+  const client = createClient(
+    process.env.NEXT_PUBLIC_URL,
+    process.env.NEXT_PUBLIC_KEY
+  );
+
+  useEffect(() => {
+    const fetchProperties = async () => {
+      const result = await client.from("properties").select("*");
+      setProperties(result.data);
+    };
+
+    fetchProperties();
+  }, []);
+
   const suggestPropertyList = [
-    { label: "Popular properties", key: "100" },
-    { label: "Latest properties", key: "Latest properties" },
-    { label: "Recommended properties", key: "Recommended properties" },
+    { label: "Popular properties", key: "popular" },
+    { label: "Latest properties", key: "latest" },
+    { label: "Recommended properties", key: "recommended" },
   ];
 
   const handleClick = (e) => {
@@ -51,7 +68,7 @@ const PropertiesGridView = () => {
             </Dropdown>
           </div>
         </div>
-        <PropertiesGridContainer />
+        <PropertiesGridContainer allProperties={properties} />
         <div className="flex flex-row items-end justify-center gap-[8px] text-center text-primary-500">
           {/* <div className="rounded bg-primary-50 flex flex-row p-2.5 items-start justify-start">
             <img className="relative w-6 h-6" alt="" src="/arrowleft.svg" />

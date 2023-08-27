@@ -2,7 +2,7 @@ import { Button } from "@mui/material";
 import Link from "next/link";
 import PropertyCard from "./property-card";
 
-const RentPropertiesForm = () => {
+const RentPropertiesLatestContainer = () => {
   return (
     <form className="self-stretch flex flex-col py-[86px] px-0 items-center justify-start gap-[39px]">
       <div className="self-stretch flex flex-col items-center justify-start gap-[40px] max-w-[95%px] md:pl-[60px] md:pr-[60px] md:box-border">
@@ -139,73 +139,19 @@ const RentPropertiesForm = () => {
             </div>
           </div>
           <PropertyCard
-            imageDimensions="/unsplashrlwe8f8anoc8@2x.png"
-            imageDimensionIds="/car5.svg"
-            imageDimensionValues="/bathtub5.svg"
-            imageDimensionIdsAndValue="/arrowsout2.svg"
-            imageDimensionIdsAndValue2="/ellipse-1@2x.png"
-            imageDimensionIdsAndValue3="/sharenetwork6.svg"
-            imageDimensionIdsAndValue4="/heart2.svg"
-            imageDimensionIdsAndValue5="/plus8.svg"
-            propWidth="unset"
-            propFlex="1"
-            propMinWidth="355px"
-            propMaxWidth="400px"
-            propBoxSizing="border-box"
-            propDisplay="inline-block"
-            propBoxSizing1="border-box"
-            propDisplay1="inline-block"
-            propBoxSizing2="border-box"
-            propDisplay2="inline-block"
-            propDisplay3="inline-block"
-            propDisplay4="inline-block"
-            propDisplay5="inline-block"
+            imgUrl="/unsplashrlwe8f8anoc8@2x.png"
+            name="92 Allium Place, Orlando FL"
+            price="590,632"
           />
           <PropertyCard
-            imageDimensions="/unsplashrlwe8f8anoc9@2x.png"
-            imageDimensionIds="/car6.svg"
-            imageDimensionValues="/bathtub.svg"
-            imageDimensionIdsAndValue="/arrowsout3.svg"
-            imageDimensionIdsAndValue2="/ellipse-1@2x.png"
-            imageDimensionIdsAndValue3="/sharenetwork7.svg"
-            imageDimensionIdsAndValue4="/heart2.svg"
-            imageDimensionIdsAndValue5="/plus3.svg"
-            propWidth="unset"
-            propFlex="1"
-            propMinWidth="355px"
-            propMaxWidth="400px"
-            propBoxSizing="border-box"
-            propDisplay="inline-block"
-            propBoxSizing1="border-box"
-            propDisplay1="inline-block"
-            propBoxSizing2="border-box"
-            propDisplay2="inline-block"
-            propDisplay3="inline-block"
-            propDisplay4="inline-block"
-            propDisplay5="inline-block"
+            imgUrl="/unsplashrlwe8f8anoc9@2x.png"
+            name="92 Allium Place, Orlando FL"
+            price="590,632"
           />
           <PropertyCard
-            imageDimensions="/unsplashrlwe8f8anoc10@2x.png"
-            imageDimensionIds="/car6.svg"
-            imageDimensionValues="/bathtub.svg"
-            imageDimensionIdsAndValue="/arrowsout3.svg"
-            imageDimensionIdsAndValue2="/ellipse-1@2x.png"
-            imageDimensionIdsAndValue3="/sharenetwork7.svg"
-            imageDimensionIdsAndValue4="/heart2.svg"
-            imageDimensionIdsAndValue5="/plus3.svg"
-            propWidth="unset"
-            propFlex="1"
-            propMinWidth="355px"
-            propMaxWidth="400px"
-            propBoxSizing="border-box"
-            propDisplay="inline-block"
-            propBoxSizing1="border-box"
-            propDisplay1="inline-block"
-            propBoxSizing2="border-box"
-            propDisplay2="inline-block"
-            propDisplay3="inline-block"
-            propDisplay4="inline-block"
-            propDisplay5="inline-block"
+            imgUrl="/unsplashrlwe8f8anoc10@2x.png"
+            name="92 Allium Place, Orlando FL"
+            price="590,632"
           />
         </div>
       </div>
@@ -216,4 +162,4 @@ const RentPropertiesForm = () => {
   );
 };
 
-export default RentPropertiesForm;
+export default RentPropertiesLatestContainer;

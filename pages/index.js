@@ -3,7 +3,8 @@ import Header from "../components/header";
 import Hero from "../components/hero";
 import AreaContainer from "../components/area-container";
 import AreaFeatureContainer from "../components/area-feature-container";
-import RentPropertiesForm from "../components/rent-properties-form";
+import RentPropertiesLatestContainer from "../components/rent-properties-form";
+
 import RentPropertiesContainer from "../components/rent-properties-container";
 import Contact from "../components/contact";
 import Footer from "../components/footer";
@@ -20,7 +21,7 @@ const LandingPage = () => {
         <Hero />
         <AreaContainer />
         <AreaFeatureContainer />
-        <RentPropertiesForm />
+        <RentPropertiesLatestContainer />
         <RentPropertiesContainer />
         <Contact />
         <Footer
